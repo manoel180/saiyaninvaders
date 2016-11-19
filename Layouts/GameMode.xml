@@ -31,7 +31,7 @@
             <instances>
                 <instance type="SingleText" uid="1">
                     <properties>
-                        <text>Single</text>
+                        <text>Single 2</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Impact,-64,400,0</font>
                         <color>0,0,0</color>
