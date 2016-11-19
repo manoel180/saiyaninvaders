@@ -8,8 +8,8 @@
                 <condition id="0" name="On clicked" sid="178513925670012" type="ButtonBack" />
             </conditions>
             <actions>
-                <action id="-43" name="Go to next/previous layout" sid="389966396719387" type="System">
-                    <param id="0" name="Which">1</param>
+                <action id="-2" name="Go to layout" sid="481651953482778" type="System">
+                    <param id="0" name="Layout">GameMode</param>
                 </action>
             </actions>
         </event-block>

@@ -5,7 +5,7 @@
     <events>
         <event-block sid="817567992422063">
             <conditions>
-                <condition id="4" name="Is touching object" sid="353080738921739" type="Touch">
+                <condition id="4" name="Is touching object" sid="647632908633043" type="Touch">
                     <param id="0" name="Object">StartText</param>
                 </condition>
             </conditions>

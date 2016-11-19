@@ -2,5 +2,87 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event Single</name>
-    <events />
+    <events>
+        <event-group description="" sid="353246838329332" title="Keyboard">
+            <sub-events>
+                <event-block sid="923599913105932">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="802401813978936" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="290758419835788" type="Poder">
+                            <param id="0" name="X">Poder.X - 6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="940525769908155">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="727630552533004" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="471400999834185" type="Poder">
+                            <param id="0" name="X">Poder.X + 6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="871083326427606">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="516255491503263" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="829957044124165" type="Player1">
+                            <param id="0" name="X">Self.X - 6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="997432095424432">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="830908906528077" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="824511256962783" type="Player1">
+                            <param id="0" name="X">Self.X + 6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="661223522953068">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="758710903566798" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="758574405447381" type="Poder">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="751023510809489" type="System">
+                            <param id="0" name="Object to create">Poder</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">Player1.X</param>
+                            <param id="3" name="Y">Player1.Y - 32</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="897516649682602">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="264001420069375" type="Capsulas">
+                    <param id="0" name="Object">Poder</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="275168645351923" type="Capsulas" />
+                <action id="-9" name="Destroy" sid="233306090691716" type="Poder" />
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
