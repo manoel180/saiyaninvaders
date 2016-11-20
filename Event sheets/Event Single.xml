@@ -109,7 +109,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="460312166747381" title="Mecanica">
+        <event-group description="" sid="460312166747381" title="Colisao">
             <sub-events>
                 <event-block sid="897516649682602">
                     <conditions>
@@ -124,5 +124,17 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="944747278365223">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="114432787976838" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="869626363532008" type="System">
+                    <param id="0" name="Layout">GameMode</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

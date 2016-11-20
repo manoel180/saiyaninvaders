@@ -10,7 +10,6 @@
     <unique-id>3fa8nv6g56vq8</unique-id>
     <saved-with-version>23300</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -64,9 +63,6 @@
         </object-type>
         <object-type name="TextInstructionsTitle" sid="218061569084615">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="ButtonBack" sid="722770675707775">
-            <plugin id="Button" />
         </object-type>
         <object-type name="TextBox" sid="721067652118238">
             <plugin id="TextBox" />
@@ -172,6 +168,14 @@
         </object-type>
         <object-type name="Player2" sid="472036548766070">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="665138136758089">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="208692639362080">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="656854265540314" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="E:\PosGraduacao\2 - Introdução a programação de jogos\Assets_Breakout\Assets_Breakout\paddle.png">
@@ -191,6 +195,11 @@
         </object-type>
         <object-type name="PoderP2" sid="601924547670026">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="673980673429921">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475118253557887" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\PosGraduacao\2 - Introdução a programação de jogos\Assets_Breakout\Assets_Breakout\ball-norma.png">
@@ -208,7 +217,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="706977427325147">
+        <object-type name="VidaP2" sid="706977427325147">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751998164556686" speed="5">
@@ -226,6 +235,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="624328601361314">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
