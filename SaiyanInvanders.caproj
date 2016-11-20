@@ -151,6 +151,82 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Vida" sid="296946750286556">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="766672371470985" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Documents\GitHub\saiyaninvaders\Files\prototipo vida.png">
+                        <collision-poly>
+                            <point x="0.128906" y="0.128906" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.867188" y="0.132813" />
+                            <point x="0.898438" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.917969" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player2" sid="472036548766070">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="656854265540314" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="E:\PosGraduacao\2 - Introdução a programação de jogos\Assets_Breakout\Assets_Breakout\paddle.png">
+                        <collision-poly>
+                            <point x="0.0357143" y="0.16" />
+                            <point x="0.5" y="0.04" />
+                            <point x="0.964286" y="0.16" />
+                            <point x="1" y="0.48" />
+                            <point x="0.973214" y="0.88" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0267857" y="0.88" />
+                            <point x="0" y="0.48" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PoderP2" sid="601924547670026">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475118253557887" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\PosGraduacao\2 - Introdução a programação de jogos\Assets_Breakout\Assets_Breakout\ball-norma.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.166667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.833333" y="0.166667" />
+                            <point x="0.958333" y="0.5" />
+                            <point x="0.833333" y="0.833333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.166667" y="0.833333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="706977427325147">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751998164556686" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Documents\GitHub\saiyaninvaders\Files\prototipo vida.png">
+                        <collision-poly>
+                            <point x="0.128906" y="0.128906" />
+                            <point x="0.5" y="0.117188" />
+                            <point x="0.867188" y="0.132813" />
+                            <point x="0.898438" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.917969" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -158,12 +234,14 @@
         <layout>GameMode.xml</layout>
         <layout>Instructions.xml</layout>
         <layout>Single.xml</layout>
+        <layout>Multiplayer.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event Main.xml</event-sheet>
         <event-sheet>Event Mode.xml</event-sheet>
         <event-sheet>Event Instructions.xml</event-sheet>
         <event-sheet>Event Single.xml</event-sheet>
+        <event-sheet>Event Multiplayer.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="45" />

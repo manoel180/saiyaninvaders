@@ -34,6 +34,9 @@
                         <condition id="0" name="On key pressed" sid="758710903566798" type="Keyboard">
                             <param id="0" name="Key">32 (Space)</param>
                         </condition>
+                        <condition id="2" name="Key is down" sid="669471066694855" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="751023510809489" type="System">
@@ -50,18 +53,76 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="479550340340865">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="894104259906161" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="777161645606578" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="456124692814433" type="System">
+                            <param id="0" name="Object to create">Poder</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">Player1.X</param>
+                            <param id="3" name="Y">Player1.Y - 32</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="158978514863521" type="Poder">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="270105184134485" type="Poder">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="180971418362240" type="Poder">
+                            <param id="0" name="Angle">305</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="688792400132138">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="509731529807438" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="890923374867300" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="862053701663724" type="System">
+                            <param id="0" name="Object to create">Poder</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">Player1.X</param>
+                            <param id="3" name="Y">Player1.Y - 32</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="132680651633677" type="Poder">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="688762856086784" type="Poder">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="178605853090461" type="Poder">
+                            <param id="0" name="Angle">215</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="897516649682602">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="264001420069375" type="Capsulas">
-                    <param id="0" name="Object">Poder</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="275168645351923" type="Capsulas" />
-                <action id="-9" name="Destroy" sid="233306090691716" type="Poder" />
-            </actions>
-        </event-block>
+        <event-group description="" sid="460312166747381" title="Mecanica">
+            <sub-events>
+                <event-block sid="897516649682602">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="264001420069375" type="Capsulas">
+                            <param id="0" name="Object">Poder</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="275168645351923" type="Capsulas" />
+                        <action id="-9" name="Destroy" sid="233306090691716" type="Poder" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
