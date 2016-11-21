@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event Multiplayer</name>
     <events>
+        <variable constant="0" name="VidaP2" sid="733514062359849" static="0" type="number">2</variable>
+        <variable constant="0" name="VidaP1" sid="179454221703968" static="0" type="number">2</variable>
         <event-group description="" sid="637106772640916" title="KeyboardPlayer1">
             <sub-events>
                 <event-block sid="603306704877585">
@@ -250,19 +252,78 @@
                         <action id="-9" name="Destroy" sid="930745488507615" type="PoderP2" />
                     </actions>
                 </event-block>
+                <event-block sid="280823960325617">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="392072676434168" type="Poder">
+                            <param id="0" name="Object">Player2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="851196021928014" type="System">
+                            <param id="0" name="Variable">VidaP2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="750243124861119">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="665064163176851" type="PoderP2">
+                            <param id="0" name="Object">Player1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="309521557534051" type="System">
+                            <param id="0" name="Variable">VidaP1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="514538268855925">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="323712205461743" type="Keyboard">
-                    <param id="0" name="Key">27 (Esc)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="970884812754760" type="System">
-                    <param id="0" name="Layout">GameMode</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="604567620390447" title="FinalizacaoJogo">
+            <sub-events>
+                <event-block sid="514538268855925">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="323712205461743" type="Keyboard">
+                            <param id="0" name="Key">27 (Esc)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="970884812754760" type="System">
+                            <param id="0" name="Layout">GameMode</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="490422897535243" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="205515838422194">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="389352997787366" type="System">
+                            <param id="0" name="First value">VidaP2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="527882894732721" type="System">
+                            <param id="0" name="Layout">ResultadoMP</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="923436327755529">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="703251951769891" type="System">
+                            <param id="0" name="First value">VidaP1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="507393816645491" type="System">
+                            <param id="0" name="Layout">ResultadoMP</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

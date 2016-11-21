@@ -239,6 +239,18 @@
         <object-type name="Text" sid="624328601361314">
             <plugin id="Text" />
         </object-type>
+        <object-type name="WinText" sid="326223551281762">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextJogarNov" sid="907535716258081">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextVoltarMenu" sid="846844783029728">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextComentario" sid="792594274807944">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -247,6 +259,7 @@
         <layout>Instructions.xml</layout>
         <layout>Single.xml</layout>
         <layout>Multiplayer.xml</layout>
+        <layout>ResultadoMP.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event Main.xml</event-sheet>
@@ -254,6 +267,7 @@
         <event-sheet>Event Instructions.xml</event-sheet>
         <event-sheet>Event Single.xml</event-sheet>
         <event-sheet>Event Multiplayer.xml</event-sheet>
+        <event-sheet>Event ResultadoMP.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="45" />
