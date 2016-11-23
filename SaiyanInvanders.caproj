@@ -105,6 +105,9 @@
                 <behavior-type name="8Direction" sid="369199246770198">
                     <behavior id="EightDir" />
                 </behavior-type>
+                <behavior-type name="BoundToLayout" sid="297507961321786">
+                    <behavior id="bound" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="967490324547909" speed="5">
