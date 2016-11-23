@@ -162,5 +162,27 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="229887902469303">
+            <conditions>
+                <condition id="-31" inverted="1" name="Object UID exists" sid="331956458473364" type="System">
+                    <param id="0" name="UID">Capsulas.UID</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="184542391673888" type="System">
+                    <param id="0" name="Layout">Single</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="573279127947370">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="741168188409279" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="438696201591103" type="SCORE">
+                    <param id="0" name="Text">&quot;SCORE &quot;&amp;score</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
