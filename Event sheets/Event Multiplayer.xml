@@ -50,9 +50,6 @@
                         <action id="-15" name="Set visible" sid="501662664377695" type="Poder">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="422352974739930" type="Poder">
-                            <param id="0" name="State">1</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="381532509330122">
@@ -74,12 +71,6 @@
                         <action id="-15" name="Set visible" sid="982818705288301" type="Poder">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="619132614904439" type="Poder">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="802059708973255" type="Poder">
-                            <param id="0" name="Angle">305</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="622450913980880">
@@ -100,12 +91,6 @@
                         </action>
                         <action id="-15" name="Set visible" sid="982812839449713" type="Poder">
                             <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="792325170948596" type="Poder">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="598380100394582" type="Poder">
-                            <param id="0" name="Angle">215</param>
                         </action>
                     </actions>
                 </event-block>
@@ -155,12 +140,6 @@
                 <action id="-15" name="Set visible" sid="622727301068316" type="PoderP2">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="966350169369827" type="PoderP2">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="724567923733836" type="PoderP2">
-                    <param id="0" name="Angle">90</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="992170314557532">
@@ -182,12 +161,6 @@
                 <action id="-15" name="Set visible" sid="269641858499902" type="PoderP2">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="383563465031038" type="PoderP2">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="407346785934829" type="PoderP2">
-                    <param id="0" name="Angle">45</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="337258756749318">
@@ -208,12 +181,6 @@
                 </action>
                 <action id="-15" name="Set visible" sid="737603558879611" type="PoderP2">
                     <param id="0" name="Visibility">1</param>
-                </action>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="278275537323109" type="PoderP2">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="471846895566113" type="PoderP2">
-                    <param id="0" name="Angle">135</param>
                 </action>
             </actions>
         </event-block>
