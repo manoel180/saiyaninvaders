@@ -140,14 +140,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="702774971730168" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\RAIO-goku.png">
                         <collision-poly>
-                            <point x="0.169566" y="0.16879" />
-                            <point x="0.5" y="0.00318471" />
-                            <point x="0.830434" y="0.16879" />
-                            <point x="0.954347" y="0.5" />
-                            <point x="0.830434" y="0.83121" />
-                            <point x="0.5" y="0.996815" />
-                            <point x="0.169566" y="0.83121" />
-                            <point x="0.00434783" y="0.5" />
+                            <point x="0.83121" y="0.169566" />
+                            <point x="0.996815" y="0.5" />
+                            <point x="0.83121" y="0.830434" />
+                            <point x="0.5" y="0.954347" />
+                            <point x="0.16879" y="0.830434" />
+                            <point x="0.00318474" y="0.5" />
+                            <point x="0.16879" y="0.169566" />
+                            <point x="0.5" y="0.00434783" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -155,20 +155,14 @@
         </object-type>
         <object-type name="Vida" sid="296946750286556">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="life" sid="221467434454315" type="number" />
+            </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="766672371470985" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Documents\GitHub\saiyaninvaders\Files\prototipo vida.png">
-                        <collision-poly>
-                            <point x="0.128906" y="0.128906" />
-                            <point x="0.5" y="0.117188" />
-                            <point x="0.867188" y="0.132813" />
-                            <point x="0.898438" y="0.5" />
-                            <point x="0.75" y="0.75" />
-                            <point x="0.5" y="0.917969" />
-                            <point x="0.257813" y="0.742188" />
-                            <point x="0.0625" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="766672371470985" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\Esfera-1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\Esfera-2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\Esfera-3.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -213,14 +207,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475118253557887" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\RAIO-nave.png">
                         <collision-poly>
-                            <point x="0.166667" y="0.166667" />
-                            <point x="0.5" y="0" />
-                            <point x="0.833333" y="0.166667" />
-                            <point x="0.958333" y="0.5" />
-                            <point x="0.833333" y="0.833333" />
-                            <point x="0.5" y="1" />
                             <point x="0.166667" y="0.833333" />
                             <point x="0" y="0.5" />
+                            <point x="0.166667" y="0.166667" />
+                            <point x="0.5" y="0.041667" />
+                            <point x="0.833333" y="0.166667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.833333" y="0.833333" />
+                            <point x="0.5" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>

@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event Single</name>
     <events>
+        <variable constant="0" name="life" sid="969024939292751" static="0" type="number">2</variable>
         <event-group description="" sid="353246838329332" title="Keyboard">
             <sub-events>
                 <event-block sid="661223522953068">
@@ -40,7 +41,7 @@
                     <param id="2" name="Image point">1</param>
                 </action>
                 <action id="-8" name="Set angle" sid="592370131293467" type="PoderP2">
-                    <param id="0" name="Angle">180</param>
+                    <param id="0" name="Angle">90</param>
                 </action>
             </actions>
         </event-block>
@@ -63,7 +64,23 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="726893901179645" type="Player1" />
+                <action id="-9" name="Destroy" sid="316489695063409" type="Player1" />
+                <action id="-11" name="Subtract from" sid="565970860036696" type="System">
+                    <param id="0" name="Variable">life</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="548393603217200" type="Vida">
+                    <param id="0" name="Frame number">life</param>
+                </action>
+                <action id="-16" name="Wait" sid="612454830869560" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-3" name="Create object" sid="726893901179645" type="System">
+                    <param id="0" name="Object to create">Player1</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">510</param>
+                    <param id="3" name="Y">704</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="755870661640882">
@@ -85,6 +102,37 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="814538287865782" type="Capsulas" />
+                <action id="-9" name="Destroy" sid="372691261557962" type="Poder" />
+            </actions>
+        </event-block>
+        <event-block any="1" sid="716815570236898">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="585269597298138" type="Capsulas">
+                    <param id="0" name="Object">Player1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="529555515408825" type="System">
+                    <param id="0" name="Variable">life</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">-1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="171515003335293" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="829266986768631" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="719328506600583">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="256375224803821" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="718021014034121" type="Capsulas">
+                    <param id="0" name="Y">Capsulas.Y + 10</param>
+                </action>
             </actions>
         </event-block>
     </events>
