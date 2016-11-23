@@ -1526,8 +1526,8 @@
                         <x>32</x>
                         <y>32</y>
                         <z>0</z>
-                        <width>24.25</width>
-                        <height>24.25</height>
+                        <width>48</width>
+                        <height>48</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1593,7 +1593,7 @@
                     <properties>
                         <text>SCORE 0</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Calibri,-24,700,0</font>
+                        <font>Impact,-19,700,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
