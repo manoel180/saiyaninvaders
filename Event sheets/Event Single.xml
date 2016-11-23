@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Single</name>
+    <events>
+        <variable constant="0" name="lifeP1" sid="979268468411259" static="0" type="number">2</variable>
+        <variable constant="0" name="score" sid="211191252397966" static="0" type="number">0</variable>
+        <event-group description="" sid="353246838329332" title="Keyboard">
+            <sub-events>
+                <event-block sid="661223522953068">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="758710903566798" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="791662099230142" type="Player1">
+                            <param id="0" name="Object">Poder</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="691646137548103" type="Poder">
+                            <param id="0" name="Angle">-90</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="158023436452204">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="375184398868285" type="System">
+                    <param id="0" name="Interval (seconds)">2.0</param>
+                </condition>
+                <condition id="-16" name="Pick random instance" sid="793943155574891" type="System">
+                    <param id="0" name="Object">Capsulas</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="247044018755774" type="Capsulas">
+                    <param id="0" name="Object">PoderP2</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="592370131293467" type="PoderP2">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="944747278365223">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="114432787976838" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="869626363532008" type="System">
+                    <param id="0" name="Layout">GameMode</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="694420729754847">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="785400764295418" type="PoderP2">
+                    <param id="0" name="Object">Player1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="316489695063409" type="Player1" />
+                <action id="-11" name="Subtract from" sid="565970860036696" type="System">
+                    <param id="0" name="Variable">lifeP1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="612454830869560" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-3" name="Create object" sid="726893901179645" type="System">
+                    <param id="0" name="Object to create">Player1</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">510</param>
+                    <param id="3" name="Y">704</param>
+                </action>
+                <action id="5" name="Set frame" sid="547709494369555" type="Vida">
+                    <param id="0" name="Frame number">lifeP1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="755870661640882">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="399727857300734" type="Poder">
+                    <param id="0" name="Object">PoderP2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="659632600819986" type="Poder" />
+                <action id="-9" name="Destroy" sid="158351908529509" type="PoderP2" />
+            </actions>
+        </event-block>
+        <event-block sid="494708010852921">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="894312974513087" type="Poder">
+                    <param id="0" name="Object">Capsulas</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="814538287865782" type="Capsulas" />
+                <action id="-9" name="Destroy" sid="372691261557962" type="Poder" />
+                <action id="-10" name="Add to" sid="413460915996636" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="462867802003198" type="SCORE">
+                    <param id="0" name="Text">&quot;SCORE &quot;&amp;score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="tratar o fim do jogo" sid="208247277351181" title="Group game over">
+            <sub-events>
+                <event-block any="1" sid="716815570236898">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="585269597298138" type="Capsulas">
+                            <param id="0" name="Object">Player1</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="978801977209012" type="System">
+                            <param id="0" name="First value">-1</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">lifeP1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="439844220293368" type="System">
+                            <param id="0" name="Layout">GameOver</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="538424614631313" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="537755824541029">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="620803801552918" type="Player1" />
+                        <condition id="-2" name="Compare Y" sid="890800517632421" type="Capsulas">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">Player1.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="171515003335293" type="System">
+                            <param id="0" name="Layout">GameOver</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="829266986768631" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="719328506600583">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="256375224803821" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="718021014034121" type="Capsulas">
+                    <param id="0" name="Y">Capsulas.Y + 10</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
