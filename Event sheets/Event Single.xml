@@ -35,7 +35,7 @@
                 <event-block sid="184960985938903">
                     <conditions>
                         <condition id="2" name="Key is down" sid="778314808078374" type="Keyboard">
-                            <param id="0" name="Key">83 (S)</param>
+                            <param id="0" name="Key">68 (D)</param>
                         </condition>
                     </conditions>
                     <actions>
