@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Main</name>
-    <sid>494279920379652</sid>
-    <event-sheet>Event Main</event-sheet>
+    <name>GameOver</name>
+    <sid>423287521348969</sid>
+    <event-sheet></event-sheet>
     <size>
         <width>1024</width>
         <height>768</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="650598153877485">
+        <layer name="Layer 0" sid="900128811291026">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,26 +29,19 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="StartText" uid="0">
+                <instance type="TiledBackground" uid="49">
                     <properties>
-                        <text>START</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Impact,-96,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>384</x>
-                        <y>68</y>
+                        <x>0</x>
+                        <y>0</y>
                         <z>0</z>
-                        <width>256</width>
-                        <height>160</height>
+                        <width>1024</width>
+                        <height>768</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
