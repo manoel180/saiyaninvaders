@@ -182,7 +182,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="656854265540314" speed="5">
-                    <frame duration="1" hotspotX="0.502347" hotspotY="0.519573" original-source="C:\Users\Samuel\Documents\GitHub\saiyaninvaders\Vegetta.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\Samuel\Documents\GitHub\saiyaninvaders\Vegetta.png">
                         <collision-poly>
                             <point x="0.0357143" y="0.16" />
                             <point x="0.5" y="0.04" />
@@ -260,7 +260,7 @@
         </object-type>
         <object-type name="TiledBackground" sid="367185739410552">
             <plugin id="TiledBg" />
-            <texture original-source="E:\sprites\TELA-game-over.png" />
+            <texture original-source="E:\sprites\Game-Over-Goku.png" />
         </object-type>
         <object-type name="background" sid="533907500443272">
             <plugin id="Sprite" />
@@ -272,6 +272,29 @@
         </object-type>
         <object-type name="SCORE" sid="535462374634653">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="explosao" sid="310942011461110">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="16" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220599298702439" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

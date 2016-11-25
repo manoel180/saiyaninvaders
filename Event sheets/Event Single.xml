@@ -135,6 +135,11 @@
                 <action id="0" name="Set text" sid="462867802003198" type="SCORE">
                     <param id="0" name="Text">&quot;SCORE &quot;&amp;score</param>
                 </action>
+                <action id="0" name="Spawn another object" sid="707244465492595" type="Capsulas">
+                    <param id="0" name="Object">explosao</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="tratar o fim do jogo" sid="208247277351181" title="Group game over">
