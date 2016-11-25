@@ -10,10 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Single</layout>
+        <layout order="1">Single</layout>
         <layout order="2">GameMode</layout>
-        <layout order="3">Main</layout>
-        <event-sheet order="1">Event Single</event-sheet>
+        <layout order="3">Instructions</layout>
+        <layout order="5">GameOver</layout>
+        <event-sheet active="1" order="0">Event Single</event-sheet>
+        <event-sheet order="4">Event Instructions</event-sheet>
+        <event-sheet order="6">Event GameOver</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -27,7 +30,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Capsulas/" />
@@ -38,5 +41,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PoderP2/" />
         <folder expanded="1" path="animation-folder/VidaP2/" />
         <folder expanded="1" path="animation-folder/background/" />
+        <folder expanded="1" path="animation-folder/explosao/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/CapsulasVegeta/" />
+        <folder expanded="1" path="animation-folder/CapsulasGoku/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/voltar/" />
+        <folder expanded="1" path="animation-folder/controles/" />
+        <folder expanded="1" path="animation-folder/singletxt/" />
+        <folder expanded="1" path="animation-folder/multiplayer/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
     </folders-expanded>
 </c2uistate>

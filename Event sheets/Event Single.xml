@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event Single</name>
     <events>
+        <variable constant="0" name="speedBullet" sid="233578165515744" static="0" type="number">1</variable>
+        <variable constant="0" name="speed" sid="975701457048273" static="0" type="number">0.9</variable>
         <variable constant="0" name="lifeP1" sid="979268468411259" static="0" type="number">2</variable>
         <variable constant="0" name="score" sid="211191252397966" static="0" type="number">0</variable>
         <event-group description="" sid="353246838329332" title="Keyboard">
@@ -22,6 +24,36 @@
                         <action id="-8" name="Set angle" sid="691646137548103" type="Poder">
                             <param id="0" name="Angle">-90</param>
                         </action>
+                        <action id="0" name="Play" sid="999320288703800" type="Audio">
+                            <param id="0" name="Audio file">basicbeam_fire</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="184960985938903">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="778314808078374" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="331502550065351" type="Player1">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="328999529176237">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="327661570717465" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="297721348027419" type="Player1">
+                            <param id="0" name="Control">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -29,7 +61,7 @@
         <event-block sid="158023436452204">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="375184398868285" type="System">
-                    <param id="0" name="Interval (seconds)">2.0</param>
+                    <param id="0" name="Interval (seconds)">speedBullet</param>
                 </condition>
                 <condition id="-16" name="Pick random instance" sid="793943155574891" type="System">
                     <param id="0" name="Object">Capsulas</param>
@@ -55,6 +87,13 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="869626363532008" type="System">
                     <param id="0" name="Layout">GameMode</param>
+                </action>
+                <action id="-9" name="Set value" sid="704947777448036" type="System">
+                    <param id="0" name="Variable">pause</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-36" name="Save" sid="506348888805037" type="System">
+                    <param id="0" name="Slot">&quot;mysave&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -82,6 +121,12 @@
                 <action id="5" name="Set frame" sid="547709494369555" type="Vida">
                     <param id="0" name="Frame number">lifeP1</param>
                 </action>
+                <action id="0" name="Play" sid="910794565950816" type="Audio">
+                    <param id="0" name="Audio file">pain2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="755870661640882">
@@ -106,10 +151,21 @@
                 <action id="-9" name="Destroy" sid="372691261557962" type="Poder" />
                 <action id="-10" name="Add to" sid="413460915996636" type="System">
                     <param id="0" name="Variable">score</param>
-                    <param id="1" name="Value">1</param>
+                    <param id="1" name="Value">Capsulas.point</param>
                 </action>
                 <action id="0" name="Set text" sid="462867802003198" type="SCORE">
                     <param id="0" name="Text">&quot;SCORE &quot;&amp;score</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="707244465492595" type="Capsulas">
+                    <param id="0" name="Object">explosao</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="0" name="Play" sid="787146226248042" type="Audio">
+                    <param id="0" name="Audio file">explosion</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -131,6 +187,12 @@
                             <param id="0" name="Layout">GameOver</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="538424614631313" type="System" />
+                        <action id="0" name="Play" sid="235245849910797" type="Audio">
+                            <param id="0" name="Audio file">pain3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="537755824541029">
@@ -146,6 +208,12 @@
                             <param id="0" name="Layout">GameOver</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="829266986768631" type="System" />
+                        <action id="0" name="Play" sid="978510394047466" type="Audio">
+                            <param id="0" name="Audio file">pain3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -153,12 +221,133 @@
         <event-block sid="719328506600583">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="256375224803821" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
+                    <param id="0" name="Interval (seconds)">speed</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Set Y" sid="718021014034121" type="Capsulas">
                     <param id="0" name="Y">Capsulas.Y + 10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="229887902469303">
+            <conditions>
+                <condition id="-31" inverted="1" name="Object UID exists" sid="331956458473364" type="System">
+                    <param id="0" name="UID">Capsulas.UID</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="184542391673888" type="System">
+                    <param id="0" name="Layout">Single</param>
+                </action>
+                <action id="-9" name="Set value" sid="163253177234641" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="573279127947370">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="741168188409279" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="438696201591103" type="SCORE">
+                    <param id="0" name="Text">&quot;SCORE &quot;&amp;score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="453653513067819">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="152433248678724" type="System">
+                    <param id="0" name="First value">Capsulas.Count</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="509006037696612" type="System">
+                    <param id="0" name="Variable">speed</param>
+                    <param id="1" name="Value">0.20</param>
+                </action>
+                <action id="-9" name="Set value" sid="712637387080052" type="System">
+                    <param id="0" name="Variable">speedBullet</param>
+                    <param id="1" name="Value">0.10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="148478516500510">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="945284439545102" type="System">
+                    <param id="0" name="First value">Capsulas.Count</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">20</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="229162095946419" type="System">
+                    <param id="0" name="Variable">speed</param>
+                    <param id="1" name="Value"> 0.25</param>
+                </action>
+                <action id="-9" name="Set value" sid="301986564912881" type="System">
+                    <param id="0" name="Variable">speedBullet</param>
+                    <param id="1" name="Value">0.25</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="900710337297002">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="618493631660835" type="System">
+                    <param id="0" name="First value">Capsulas.Count</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="762998267115862" type="System">
+                    <param id="0" name="Variable">speed</param>
+                    <param id="1" name="Value"> 0.40</param>
+                </action>
+                <action id="-9" name="Set value" sid="562893839224947" type="System">
+                    <param id="0" name="Variable">speedBullet</param>
+                    <param id="1" name="Value">0.40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="843475078795043">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="229388616958075" type="System">
+                    <param id="0" name="First value">Capsulas.Count</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="460063721557506" type="System">
+                    <param id="0" name="Variable">speed</param>
+                    <param id="1" name="Value"> 0.50</param>
+                </action>
+                <action id="-9" name="Set value" sid="843894087627311" type="System">
+                    <param id="0" name="Variable">speedBullet</param>
+                    <param id="1" name="Value">0.50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="735804842377955">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="223114696194976" type="System" />
+                <condition id="-14" name="Compare variable" sid="305944797195644" type="System">
+                    <param id="0" name="Variable">pause</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-37" name="Load" sid="938803545556517" type="System">
+                    <param id="0" name="Slot">&quot;mysave&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="243647056849115" type="System">
+                    <param id="0" name="Variable">pause</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
