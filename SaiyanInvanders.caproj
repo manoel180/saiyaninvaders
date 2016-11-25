@@ -10,6 +10,7 @@
     <unique-id>3fa8nv6g56vq8</unique-id>
     <saved-with-version>23300</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -73,6 +74,9 @@
         </object-type>
         <object-type name="Capsulas" sid="840675053626918">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="point" sid="556774737599231" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Sine" sid="199283091129197">
                     <behavior id="Sin" />
@@ -353,6 +357,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Audio" sid="655761942274407">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -379,8 +386,27 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Audio" uid="100">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="explosion.ogg" />
+        <file name="basicbeam_fire.ogg" />
+        <file name="pain3.ogg" />
+        <file name="pain2.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

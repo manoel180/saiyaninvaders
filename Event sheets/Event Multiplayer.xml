@@ -88,9 +88,7 @@
                     <param id="0" name="Key">13 (Return)</param>
                 </condition>
             </conditions>
-            <actions>
-                
-            </actions>
+            <actions />
         </event-block>
         <event-group description="" sid="460980864602746" title="ColisaoMultiplayer">
             <sub-events>
@@ -106,12 +104,9 @@
                     </actions>
                 </event-block>
                 <event-block sid="377467793825567">
-                    <conditions>
-                        
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="-9" name="Destroy" sid="372866682365507" type="Capsulas" />
-                       
                     </actions>
                 </event-block>
                 <event-block sid="992732663397493">
@@ -122,7 +117,6 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="684500700718260" type="Poder" />
-                      
                     </actions>
                 </event-block>
                 <event-block sid="280823960325617">
@@ -165,9 +159,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="575533028046844">
-                    <conditions>
-                        
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="-11" name="Subtract from" sid="541846352204712" type="System">
                             <param id="0" name="Variable">VidaP1</param>
