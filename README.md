@@ -2,7 +2,7 @@
 
 A Space Invaders clone using Constructor 2.
 
-<img src="" style="width:250px"/>
+<img src="https://github.com/manoel180/saiyaninvaders/blob/TELAS/TELA-splash-screen.png" style="width:250px"/>
 
 ## Contributors 
 
