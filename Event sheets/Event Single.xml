@@ -24,6 +24,30 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="184960985938903">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="778314808078374" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="331502550065351" type="Player1">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="328999529176237">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="327661570717465" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="297721348027419" type="Player1">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-block sid="158023436452204">

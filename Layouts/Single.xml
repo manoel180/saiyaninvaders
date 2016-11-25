@@ -1453,7 +1453,7 @@
                                 <deceleration>500</deceleration>
                                 <directions>Left &amp; right</directions>
                                 <set-angle>No</set-angle>
-                                <default-controls>Yes</default-controls>
+                                <default-controls>No</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
