@@ -31,55 +31,10 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="329831818954264">
-                    <conditions>
-                        <condition id="0" name="On key pressed" sid="912223984043216" type="Keyboard">
-                            <param id="0" name="Key">32 (Space)</param>
-                        </condition>
-                        <condition id="2" name="Key is down" sid="677324352700282" type="Keyboard">
-                            <param id="0" name="Key">83 (S)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="151498313836175" type="System">
-                            <param id="0" name="Object to create">Poder</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">Player1.X</param>
-                            <param id="3" name="Y">Player1.Y - 32</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="501662664377695" type="Poder">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="381532509330122">
-                    <conditions>
-                        <condition id="0" name="On key pressed" sid="693492607284871" type="Keyboard">
-                            <param id="0" name="Key">32 (Space)</param>
-                        </condition>
-                        <condition id="2" name="Key is down" sid="888688488250824" type="Keyboard">
-                            <param id="0" name="Key">68 (D)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="445308248512291" type="System">
-                            <param id="0" name="Object to create">Poder</param>
-                            <param id="1" name="Layer">1</param>
-                            <param id="2" name="X">Player1.X</param>
-                            <param id="3" name="Y">Player1.Y - 32</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="982818705288301" type="Poder">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="622450913980880">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="336863739914188" type="Keyboard">
                             <param id="0" name="Key">32 (Space)</param>
-                        </condition>
-                        <condition id="2" name="Key is down" sid="799433447184481" type="Keyboard">
-                            <param id="0" name="Key">65 (A)</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -91,6 +46,9 @@
                         </action>
                         <action id="-15" name="Set visible" sid="982812839449713" type="Poder">
                             <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="843294548842357" type="Poder">
+                            <param id="0" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>

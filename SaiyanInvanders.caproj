@@ -182,7 +182,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="656854265540314" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="E:\PosGraduacao\2 - Introdução a programação de jogos\Assets_Breakout\Assets_Breakout\paddle.png">
+                    <frame duration="1" hotspotX="0.502347" hotspotY="0.519573" original-source="C:\Users\Samuel\Documents\GitHub\saiyaninvaders\Vegetta.png">
                         <collision-poly>
                             <point x="0.0357143" y="0.16" />
                             <point x="0.5" y="0.04" />
