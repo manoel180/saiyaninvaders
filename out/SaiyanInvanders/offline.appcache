@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1480043249
+#1480090149
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -14,6 +14,14 @@ images/poderp2-sheet0.png
 images/vidap2-sheet0.png
 images/tiledbackground.png
 images/background-sheet0.png
+images/explosao-sheet0.png
+images/explosao-sheet1.png
+images/sprite-sheet0.png
+images/sprite2-sheet0.png
+media/explosion.ogg
+media/basicbeam_fire.ogg
+media/pain3.ogg
+media/pain2.ogg
 icon-16.png
 icon-32.png
 icon-114.png
