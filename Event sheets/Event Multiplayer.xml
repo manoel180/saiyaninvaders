@@ -89,21 +89,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Create object" sid="279359334461474" type="System">
-                    <param id="0" name="Object to create">PoderVegeta</param>
-                    <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">Player2.X</param>
-                    <param id="3" name="Y">Player2.Y + 32</param>
-                </action>
-                <action id="-15" name="Set visible" sid="622727301068316" type="PoderVegeta">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="720082312743240" type="PoderVegeta">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action behavior="Bullet" id="3" name="Set angle of motion" sid="482433537610735" type="PoderVegeta">
-                    <param id="0" name="Angle">90</param>
-                </action>
+                
             </actions>
         </event-block>
         <event-group description="" sid="460980864602746" title="ColisaoMultiplayer">
@@ -121,13 +107,11 @@
                 </event-block>
                 <event-block sid="377467793825567">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="177513786504848" type="Capsulas">
-                            <param id="0" name="Object">PoderVegeta</param>
-                        </condition>
+                        
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="372866682365507" type="Capsulas" />
-                        <action id="-9" name="Destroy" sid="179881043275767" type="PoderVegeta" />
+                       
                     </actions>
                 </event-block>
                 <event-block sid="992732663397493">
@@ -138,7 +122,7 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="684500700718260" type="Poder" />
-                        <action id="-9" name="Destroy" sid="930745488507615" type="PoderVegeta" />
+                      
                     </actions>
                 </event-block>
                 <event-block sid="280823960325617">
@@ -182,9 +166,7 @@
                 </event-block>
                 <event-block sid="575533028046844">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="787382510487522" type="PoderVegeta">
-                            <param id="0" name="Object">Player1</param>
-                        </condition>
+                        
                     </conditions>
                     <actions>
                         <action id="-11" name="Subtract from" sid="541846352204712" type="System">

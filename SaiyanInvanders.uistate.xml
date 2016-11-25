@@ -36,9 +36,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PoderP2/" />
         <folder expanded="1" path="animation-folder/VidaP2/" />
         <folder expanded="1" path="animation-folder/background/" />
-        <folder expanded="1" path="animation-folder/PoderVegeta/" />
+        <folder expanded="1" path="animation-folder/explosao/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/CapsulasVegeta/" />
         <folder expanded="1" path="animation-folder/CapsulasGoku/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
     </folders-expanded>
 </c2uistate>
