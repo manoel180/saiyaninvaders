@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event Single</name>
     <events>
+        <variable constant="0" name="speed" sid="975701457048273" static="0" type="number">0.9</variable>
         <variable constant="0" name="lifeP1" sid="979268468411259" static="0" type="number">2</variable>
         <variable constant="0" name="score" sid="211191252397966" static="0" type="number">0</variable>
         <event-group description="" sid="353246838329332" title="Keyboard">
@@ -135,6 +136,11 @@
                 <action id="0" name="Set text" sid="462867802003198" type="SCORE">
                     <param id="0" name="Text">&quot;SCORE &quot;&amp;score</param>
                 </action>
+                <action id="0" name="Spawn another object" sid="707244465492595" type="Capsulas">
+                    <param id="0" name="Object">explosao</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="tratar o fim do jogo" sid="208247277351181" title="Group game over">
@@ -177,7 +183,7 @@
         <event-block sid="719328506600583">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="256375224803821" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
+                    <param id="0" name="Interval (seconds)">speed</param>
                 </condition>
             </conditions>
             <actions>
@@ -205,6 +211,54 @@
             <actions>
                 <action id="0" name="Set text" sid="438696201591103" type="SCORE">
                     <param id="0" name="Text">&quot;SCORE &quot;&amp;score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="453653513067819">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="152433248678724" type="System">
+                    <param id="0" name="First value">Capsulas.Count</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">10</param>
+                </condition>
+                <condition id="-1" name="Every tick" sid="130256038059047" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="509006037696612" type="System">
+                    <param id="0" name="Variable">speed</param>
+                    <param id="1" name="Value">0.30</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="148478516500510">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="945284439545102" type="System">
+                    <param id="0" name="First value">Capsulas.Count</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">20</param>
+                </condition>
+                <condition id="-1" name="Every tick" sid="518229330479927" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="229162095946419" type="System">
+                    <param id="0" name="Variable">speed</param>
+                    <param id="1" name="Value">0.60</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="900710337297002">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="618493631660835" type="System">
+                    <param id="0" name="First value">Capsulas.Count</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">30</param>
+                </condition>
+                <condition id="-1" name="Every tick" sid="877692769980728" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="762998267115862" type="System">
+                    <param id="0" name="Variable">speed</param>
+                    <param id="1" name="Value">0.90</param>
                 </action>
             </actions>
         </event-block>
