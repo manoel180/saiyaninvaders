@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event GameOver</name>
+    <events>
+        <event-block sid="333003647101135">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="524087449592730" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="594519677327795" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="780947224708959" type="System">
+                    <param id="0" name="Layout">GameMode</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

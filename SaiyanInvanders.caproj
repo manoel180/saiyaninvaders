@@ -15,7 +15,6 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
@@ -161,9 +160,42 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="766672371470985" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\Esfera-1.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\Esfera-2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\Esfera-3.png" />
+                    <frame duration="1" hotspotX="-1" hotspotY="-1" original-source="E:\sprites\Esfera-1.png">
+                        <collision-poly>
+                            <point x="0.149485" y="0.149485" />
+                            <point x="0.5" y="0.00515464" />
+                            <point x="0.850515" y="0.149485" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85567" y="0.85567" />
+                            <point x="0.5" y="1" />
+                            <point x="0.14433" y="0.85567" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="E:\sprites\Esfera-2.png">
+                        <collision-poly>
+                            <point x="0.149485" y="0.149485" />
+                            <point x="0.5" y="0.00515464" />
+                            <point x="0.850515" y="0.149485" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85567" y="0.85567" />
+                            <point x="0.5" y="1" />
+                            <point x="0.14433" y="0.85567" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.494792" original-source="E:\sprites\Esfera-3.png">
+                        <collision-poly>
+                            <point x="0.145833" y="0.140625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854167" y="0.140625" />
+                            <point x="1" y="0.494792" />
+                            <point x="0.859375" y="0.854167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.140625" y="0.854167" />
+                            <point x="0" y="0.494792" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -254,10 +286,6 @@
         </object-type>
         <object-type name="TextComentario" sid="792594274807944">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="TiledBackground" sid="367185739410552">
-            <plugin id="TiledBg" />
-            <texture original-source="E:\sprites\Game-Over-Goku.png" />
         </object-type>
         <object-type name="background" sid="533907500443272">
             <plugin id="Sprite" />
@@ -360,6 +388,132 @@
         <object-type name="Audio" sid="655761942274407">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="Sprite3" sid="581157577497042">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="792585810036355" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\TELA-splash-screen.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="190543250605381">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410748123696150" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\TELA-modos.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="182895997590119">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="754876133888282" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\TELA-controles.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="voltar" sid="146796674958479">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="165051179221453" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\BOTAO voltar.png">
+                        <collision-poly>
+                            <point x="0.164948" y="0.164948" />
+                            <point x="0.5" y="0.0309278" />
+                            <point x="0.835052" y="0.164948" />
+                            <point x="0.989691" y="0.5" />
+                            <point x="0.85567" y="0.85567" />
+                            <point x="0.5" y="1" />
+                            <point x="0.149485" y="0.850515" />
+                            <point x="0.0154639" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="controles" sid="942010558608457">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621361308965202" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="E:\sprites\BOTAO-controles.png">
+                        <collision-poly>
+                            <point x="0.0211864" y="0.153846" />
+                            <point x="0.5" y="0.0461538" />
+                            <point x="0.987288" y="0.0923077" />
+                            <point x="0.983051" y="0.876923" />
+                            <point x="0.5" y="0.692308" />
+                            <point x="0.0190678" y="0.861538" />
+                            <point x="0.00635593" y="0.492308" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="singletxt" sid="927661193912514">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="312106947396600" speed="5">
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.508772" original-source="E:\sprites\BOTAO-singleplayer.png">
+                        <collision-poly>
+                            <point x="0.0138169" y="0.140351" />
+                            <point x="0.989637" y="0.105263" />
+                            <point x="0.993092" y="0.929825" />
+                            <point x="0.0103627" y="0.894737" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="multiplayer" sid="844463172656228">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="948335506480397" speed="5">
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.507692" original-source="E:\sprites\BOTAO-multiplayer.png">
+                        <collision-poly>
+                            <point x="0.0345423" y="0.307692" />
+                            <point x="0.499136" y="0.123077" />
+                            <point x="0.962003" y="0.338462" />
+                            <point x="0.962003" y="0.661538" />
+                            <point x="0.499136" y="0.615385" />
+                            <point x="0.029361" y="0.738462" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="179277766813716">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="993545921708104" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\BOTAO-start.png">
+                        <collision-poly>
+                            <point x="0.0230415" y="0.0961538" />
+                            <point x="0.5" y="0.00961538" />
+                            <point x="0.988479" y="0.0480769" />
+                            <point x="0.940092" y="0.5" />
+                            <point x="0.940092" y="0.75" />
+                            <point x="0.5" y="0.673077" />
+                            <point x="0.00921659" y="0.961538" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="393077156529874">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228304824588681" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\Game-Over-Goku.png">
+                        <collision-poly>
+                            <point x="0.000976563" y="0.00130548" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.000976563" y="0.998695" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -378,6 +532,7 @@
         <event-sheet>Event Single.xml</event-sheet>
         <event-sheet>Event Multiplayer.xml</event-sheet>
         <event-sheet>Event ResultadoMP.xml</event-sheet>
+        <event-sheet>Event GameOver.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="45" />

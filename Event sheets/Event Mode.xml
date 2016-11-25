@@ -6,7 +6,7 @@
         <event-block sid="547728608089288">
             <conditions>
                 <condition id="4" name="Is touching object" sid="285068194551758" type="Touch">
-                    <param id="0" name="Object">SingleText</param>
+                    <param id="0" name="Object">singletxt</param>
                 </condition>
             </conditions>
             <actions>
@@ -18,7 +18,7 @@
         <event-block sid="585959213884130">
             <conditions>
                 <condition id="4" name="Is touching object" sid="942257547064075" type="Touch">
-                    <param id="0" name="Object">VersusText</param>
+                    <param id="0" name="Object">multiplayer</param>
                 </condition>
             </conditions>
             <actions>
@@ -30,7 +30,7 @@
         <event-block sid="640011733729938">
             <conditions>
                 <condition id="4" name="Is touching object" sid="766291443232679" type="Touch">
-                    <param id="0" name="Object">InstrutionsText</param>
+                    <param id="0" name="Object">controles</param>
                 </condition>
             </conditions>
             <actions>
@@ -44,10 +44,15 @@
                 <condition id="0" name="On key pressed" sid="132174814808818" type="Keyboard">
                     <param id="0" name="Key">27 (Esc)</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="485215365948791" type="System">
+                    <param id="0" name="Variable">pause</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="124908514587158" type="System">
-                    <param id="0" name="Layout">Main</param>
+                    <param id="0" name="Layout">Single</param>
                 </action>
             </actions>
         </event-block>
