@@ -82,20 +82,13 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428669770852132" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\NAVE.png">
-                        <image-point name="Imagepoint 1" x="0.247423" y="0.247423" />
-                        <collision-poly>
-                            <point x="0.149485" y="0.149485" />
-                            <point x="0.5" y="0.00515464" />
-                            <point x="0.850515" y="0.149485" />
-                            <point x="1" y="0.5" />
-                            <point x="0.860825" y="0.860825" />
-                            <point x="0.5" y="1" />
-                            <point x="0.14433" y="0.85567" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="2" loop="1" name="Nave1" pingpong="0" repeatcount="1" repeatto="0" sid="428669770852132" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="1" name="Nave2" pingpong="0" repeatcount="1" repeatto="0" sid="797205240161331" speed="5">
+                    <frame duration="0" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -182,7 +175,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="656854265540314" speed="5">
-                    <frame duration="1" hotspotX="0.502347" hotspotY="0.519573" original-source="C:\Users\Samuel\Documents\Pos\Sprites\Vegetta.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" original-source="C:\Users\Samuel\Documents\GitHub\saiyaninvaders\Vegetta.png">
                         <collision-poly>
                             <point x="0.0357143" y="0.16" />
                             <point x="0.5" y="0.04" />
@@ -260,7 +253,7 @@
         </object-type>
         <object-type name="TiledBackground" sid="367185739410552">
             <plugin id="TiledBg" />
-            <texture original-source="E:\sprites\TELA-game-over.png" />
+            <texture original-source="E:\sprites\Game-Over-Goku.png" />
         </object-type>
         <object-type name="background" sid="533907500443272">
             <plugin id="Sprite" />
@@ -273,27 +266,26 @@
         <object-type name="SCORE" sid="535462374634653">
             <plugin id="Text" />
         </object-type>
-        <object-type name="PoderVegeta" sid="447378949254459">
+        <object-type name="explosao" sid="310942011461110">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="323570295802263">
-                    <behavior id="Bullet" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="524959860628684" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Documents\Pos\Sprites\RAIO-vegetta.png">
-                        <collision-poly>
-                            <point x="0.372807" y="0.272436" />
-                            <point x="0.5" y="0.0192308" />
-                            <point x="0.640351" y="0.262821" />
-                            <point x="0.995614" y="0.5" />
-                            <point x="0.820175" y="0.86859" />
-                            <point x="0.5" y="1" />
-                            <point x="0.192982" y="0.858974" />
-                            <point x="0.0219298" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="16" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220599298702439" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
