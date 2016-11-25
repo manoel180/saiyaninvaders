@@ -10,10 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Multiplayer</layout>
-        <layout order="2">Single</layout>
-        <event-sheet active="1" order="1">Event Multiplayer</event-sheet>
-        <event-sheet order="3">Event Single</event-sheet>
+        <layout active="1" order="0">Single</layout>
+        <layout order="2">GameOver</layout>
+        <event-sheet order="1">Event Single</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -38,6 +37,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PoderP2/" />
         <folder expanded="1" path="animation-folder/VidaP2/" />
         <folder expanded="1" path="animation-folder/background/" />
-        <folder expanded="1" path="animation-folder/PoderVegeta/" />
+        <folder expanded="1" path="animation-folder/explosao/" />
     </folders-expanded>
 </c2uistate>
