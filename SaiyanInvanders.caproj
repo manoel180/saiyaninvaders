@@ -412,6 +412,11 @@
         </object-type>
         <object-type name="Sprite2" sid="496063261847262">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="784151792203112">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="540125508707145" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Documents\Pos\Sprites\RAIO-vegetta.png">
@@ -558,6 +563,24 @@
                 </animation>
             </animation-folder>
         </object-type>
+
+        <object-type name="Player1Multi" sid="264075924509540">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="712848464687449" speed="5">
+                    <frame duration="1" hotspotX="0.501608" hotspotY="0.501779" original-source="C:\Users\Samuel\Documents\GitHub\saiyaninvaders\Animations\Player1\Default\000.png">
+                        <collision-poly>
+                            <point x="0.196141" y="0.217082" />
+                            <point x="0.498392" y="0.0782918" />
+                            <point x="0.659164" y="0.377224" />
+                            <point x="0.755627" y="0.498221" />
+                            <point x="0.842444" y="0.825623" />
+                            <point x="0.498392" y="1" />
+                            <point x="0.192926" y="0.786477" />
+                            <point x="0.122186" y="0.498221" />
+                        </collision-poly>
+                    </frame>
+
         <object-type name="Capsulas2" sid="266867052276446">
             <plugin id="Sprite" />
             <instance-variables>
@@ -579,6 +602,7 @@
                 <animation framecount="2" loop="1" name="Nave2" pingpong="0" repeatcount="1" repeatto="0" sid="664989208052880" speed="5">
                     <frame duration="0" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+
                 </animation>
             </animation-folder>
         </object-type>
