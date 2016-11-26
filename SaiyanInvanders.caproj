@@ -86,12 +86,56 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="1" name="Nave1" pingpong="0" repeatcount="1" repeatto="0" sid="428669770852132" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.277344" y="0.229032" />
+                            <point x="0.5" y="0.187097" />
+                            <point x="0.695313" y="0.251613" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.695313" y="0.748387" />
+                            <point x="0.5" y="0.812903" />
+                            <point x="0.273438" y="0.774194" />
+                            <point x="0.0859375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.277344" y="0.229032" />
+                            <point x="0.5" y="0.187097" />
+                            <point x="0.695313" y="0.251613" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.695313" y="0.748387" />
+                            <point x="0.5" y="0.812903" />
+                            <point x="0.273438" y="0.774194" />
+                            <point x="0.0859375" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="2" loop="1" name="Nave2" pingpong="0" repeatcount="1" repeatto="0" sid="797205240161331" speed="5">
-                    <frame duration="0" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="0" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.277344" y="0.229032" />
+                            <point x="0.5" y="0.187097" />
+                            <point x="0.695313" y="0.251613" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.695313" y="0.748387" />
+                            <point x="0.5" y="0.812903" />
+                            <point x="0.273438" y="0.774194" />
+                            <point x="0.0859375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.277344" y="0.229032" />
+                            <point x="0.5" y="0.187097" />
+                            <point x="0.695313" y="0.251613" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.695313" y="0.748387" />
+                            <point x="0.5" y="0.812903" />
+                            <point x="0.273438" y="0.774194" />
+                            <point x="0.0859375" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -519,6 +563,7 @@
                 </animation>
             </animation-folder>
         </object-type>
+
         <object-type name="Player1Multi" sid="264075924509540">
             <plugin id="Sprite" />
             <animation-folder>
@@ -535,6 +580,29 @@
                             <point x="0.122186" y="0.498221" />
                         </collision-poly>
                     </frame>
+
+        <object-type name="Capsulas2" sid="266867052276446">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="point" sid="170883416932093" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="280615795151246">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="886858312046200">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Nave1" pingpong="0" repeatcount="1" repeatto="0" sid="481257188852044" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="2" loop="1" name="Nave2" pingpong="0" repeatcount="1" repeatto="0" sid="664989208052880" speed="5">
+                    <frame duration="0" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+
                 </animation>
             </animation-folder>
         </object-type>
