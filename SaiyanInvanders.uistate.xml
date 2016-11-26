@@ -11,6 +11,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout active="1" order="0">Multiplayer</layout>
+        <event-sheet order="1">Event Multiplayer</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -49,5 +50,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/multiplayer/" />
         <folder expanded="1" path="animation-folder/Sprite6/" />
         <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Player1Multi/" />
     </folders-expanded>
 </c2uistate>
