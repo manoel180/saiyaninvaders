@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Multiplayer</name>
+    <events>
+        <variable constant="0" name="VidaP2" sid="733514062359849" static="0" type="number">3</variable>
+        <variable constant="0" name="VidaP1" sid="179454221703968" static="0" type="number">3</variable>
+        <event-group description="" sid="637106772640916" title="KeyboardPlayer1">
+            <sub-events>
+                <event-block sid="603306704877585">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="218614979696506" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="297319649408662" type="Player1Multi">
+                            <param id="0" name="X">Self.X - 6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="284867258876752">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="391352590866271" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="980040614021686" type="Player1Multi">
+                            <param id="0" name="X">Self.X + 6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="622450913980880">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="336863739914188" type="Keyboard">
+                            <param id="0" name="Key">32 (Space)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="891536989662259" type="System">
+                            <param id="0" name="Object to create">Poder</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">Player1Multi.X</param>
+                            <param id="3" name="Y">Player1Multi.Y - 32</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="982812839449713" type="Poder">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="156008593741839" type="Audio">
+                            <param id="0" name="Audio file">basicbeam_fire</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="843294548842357" type="Poder">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="366515813601360" type="Poder">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="938780078373932" title="KeyboardPlayer2" />
+        <event-block sid="937016865596920">
+            <conditions>
+                <condition id="2" name="Key is down" sid="922873367848396" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="681758410868581" type="Player2">
+                    <param id="0" name="X">Self.X - 6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="263196919725384">
+            <conditions>
+                <condition id="2" name="Key is down" sid="268595840217519" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="395870550996359" type="Player2">
+                    <param id="0" name="X">Self.X + 6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="597324578755924">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="674667647905019" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="338487503850167" type="System">
+                    <param id="0" name="Object to create">PoderVegeta</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Player2.X</param>
+                    <param id="3" name="Y">Player2.Y + 32</param>
+                </action>
+                <action id="-15" name="Set visible" sid="955742045633479" type="PoderVegeta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="156986559005742" type="Audio">
+                    <param id="0" name="Audio file">basicbeam_fire</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="264351883379569" type="PoderVegeta">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="888857412389075" type="PoderVegeta">
+                    <param id="0" name="Angle">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="460980864602746" title="ColisaoMultiplayer">
+            <sub-events>
+                <event-block sid="332007098717359">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="688539215475557" type="Poder">
+                            <param id="0" name="Object">Player2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="300323436636277" type="System">
+                            <param id="0" name="Variable">VidaP2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="715962673927951" type="Poder" />
+                        <action id="0" name="Play" sid="100438713122163" type="Audio">
+                            <param id="0" name="Audio file">pain2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="730633341187259">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="600453493374712" type="Poder">
+                            <param id="0" name="Object">InimigosP1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="944295384983102" type="InimigosP1" />
+                        <action id="-9" name="Destroy" sid="848835357710571" type="Poder" />
+                        <action id="0" name="Spawn another object" sid="691491737066342" type="InimigosP1">
+                            <param id="0" name="Object">explosao</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="573333651743898" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="307128322632239">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="474644107515922" type="Poder">
+                            <param id="0" name="Object">InimigosP2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="596864414041325" type="InimigosP2" />
+                        <action id="-9" name="Destroy" sid="215933032162087" type="Poder" />
+                        <action id="0" name="Spawn another object" sid="368496225699907" type="InimigosP2">
+                            <param id="0" name="Object">explosao</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="187904225767719" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="474325877514769">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="748978697153895" type="Poder">
+                            <param id="0" name="Object">PoderVegeta</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="656224216309629" type="Poder" />
+                        <action id="-9" name="Destroy" sid="952203824380461" type="PoderVegeta" />
+                    </actions>
+                </event-block>
+                <event-block sid="389851362458362">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="422335072873915" type="PoderVegeta">
+                            <param id="0" name="Object">Player1Multi</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="217670215805176" type="System">
+                            <param id="0" name="Variable">VidaP1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="780518650319911" type="PoderVegeta" />
+                        <action id="0" name="Play" sid="363672032912994" type="Audio">
+                            <param id="0" name="Audio file">pain2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="854426149990031">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="916312004672419" type="PoderVegeta">
+                            <param id="0" name="Object">InimigosP1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="885981465133781" type="InimigosP1" />
+                        <action id="-9" name="Destroy" sid="437695079307350" type="PoderVegeta" />
+                    </actions>
+                </event-block>
+                <event-block sid="669962017769150">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="712433697696262" type="PoderVegeta">
+                            <param id="0" name="Object">InimigosP2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="259959751289101" type="InimigosP2" />
+                        <action id="-9" name="Destroy" sid="629907156997404" type="PoderVegeta" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="604567620390447" title="FinalizacaoJogo">
+            <sub-events>
+                <event-block sid="514538268855925">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="323712205461743" type="Keyboard">
+                            <param id="0" name="Key">27 (Esc)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="970884812754760" type="System">
+                            <param id="0" name="Layout">GameMode</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="490422897535243" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="205515838422194">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="389352997787366" type="System">
+                            <param id="0" name="First value">VidaP2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="527882894732721" type="System">
+                            <param id="0" name="Layout">ResultadoMP</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="923436327755529">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="703251951769891" type="System">
+                            <param id="0" name="First value">VidaP1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="507393816645491" type="System">
+                            <param id="0" name="Layout">ResultadoMP</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="833298424827787" title="LifeCount">
+            <sub-events>
+                <event-block sid="432518005834382">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="747218253663233" type="System">
+                            <param id="0" name="Variable">VidaP1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="632368238104605" type="VidaGoku3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="863226733443830">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="722209914920032" type="System">
+                            <param id="0" name="Variable">VidaP1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="471546134648782" type="VidaGoku2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="436343833146283">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="909071655747897" type="System">
+                            <param id="0" name="Variable">VidaP2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="515120638993313" type="VidaVegeta3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="845068874532985">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="942736625751110" type="System">
+                            <param id="0" name="Variable">VidaP2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="780240331156427" type="VidaVegeta2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="877100902229453" title="Capsulas">
+            <sub-events>
+                <event-block sid="515371755412231">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="167760136500340" type="System">
+                            <param id="0" name="Interval (seconds)">0.8</param>
+                        </condition>
+                        <condition id="-16" name="Pick random instance" sid="980171054083481" type="System">
+                            <param id="0" name="Object">InimigosP1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="196550682558378" type="InimigosP1">
+                            <param id="0" name="Object">PoderP2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="953527688863264" type="PoderP2">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="271782956230653">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="131032386396499" type="System">
+                            <param id="0" name="Interval (seconds)">0.8</param>
+                        </condition>
+                        <condition id="-16" name="Pick random instance" sid="946044397397261" type="System">
+                            <param id="0" name="Object">InimigosP2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="453767971110699" type="InimigosP2">
+                            <param id="0" name="Object">PoderP2</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="518728035756127" type="PoderP2">
+                            <param id="0" name="Angle">270</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="466285954954935">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="756711149185693" type="PoderP2">
+                            <param id="0" name="Object">Player1Multi</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="680751650275927" type="System">
+                            <param id="0" name="Variable">VidaP1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="264905267393664" type="PoderP2" />
+                        <action id="0" name="Play" sid="734400730554580" type="Audio">
+                            <param id="0" name="Audio file">pain2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="479707244922360">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="946800685436856" type="PoderP2">
+                            <param id="0" name="Object">Player2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="687534727028897" type="System">
+                            <param id="0" name="Variable">VidaP2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="481665427226685" type="PoderP2" />
+                        <action id="0" name="Play" sid="201444345560836" type="Audio">
+                            <param id="0" name="Audio file">pain2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="743006406149438">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="615540681420426" type="PoderP2">
+                            <param id="0" name="Object">Poder</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="844291993365865" type="PoderP2" />
+                        <action id="-9" name="Destroy" sid="409702584062307" type="Poder" />
+                    </actions>
+                </event-block>
+                <event-block sid="551492355047699">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="180266991511676" type="PoderP2">
+                            <param id="0" name="Object">PoderVegeta</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="151875739836460" type="PoderP2" />
+                        <action id="-9" name="Destroy" sid="431149571219194" type="PoderVegeta" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="103275681284685">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="418750287919974" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="112320157322198" type="Audio">
+                    <param id="0" name="Audio file">Dragon_Ball_Z_Tema_Battle</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;battleM&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="967348567867735" type="Audio">
+                    <param id="0" name="Tag">&quot;intro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="651333141665778">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="396637696355963" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="953600405426264" type="Audio">
+                    <param id="0" name="Tag">&quot;battleM&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="176024699892590" type="Audio">
+                    <param id="0" name="Audio file">Dragon_Ball_Z_-_Tema_Intro</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;intro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

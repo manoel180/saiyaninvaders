@@ -27,7 +27,7 @@
                         <action id="0" name="Play" sid="999320288703800" type="Audio">
                             <param id="0" name="Audio file">basicbeam_fire</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-5</param>
+                            <param id="3" name="Volume">-15</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
@@ -118,13 +118,10 @@
                     <param id="2" name="X">510</param>
                     <param id="3" name="Y">704</param>
                 </action>
-                <action id="5" name="Set frame" sid="547709494369555" type="Vida">
-                    <param id="0" name="Frame number">lifeP1</param>
-                </action>
                 <action id="0" name="Play" sid="910794565950816" type="Audio">
                     <param id="0" name="Audio file">pain2</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-5</param>
+                    <param id="3" name="Volume">-10</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
@@ -164,7 +161,7 @@
                 <action id="0" name="Play" sid="787146226248042" type="Audio">
                     <param id="0" name="Audio file">explosion</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-10</param>
+                    <param id="3" name="Volume">-15</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
@@ -244,6 +241,10 @@
                     <param id="0" name="Variable">score</param>
                     <param id="1" name="Value">score</param>
                 </action>
+                <action id="-9" name="Set value" sid="375370185084301" type="System">
+                    <param id="0" name="Variable">pause</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="573279127947370">
@@ -253,6 +254,15 @@
             <actions>
                 <action id="0" name="Set text" sid="438696201591103" type="SCORE">
                     <param id="0" name="Text">&quot;SCORE &quot;&amp;score</param>
+                </action>
+                <action id="6" name="Stop" sid="914591911060428" type="Audio">
+                    <param id="0" name="Tag">&quot;intro&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="697794194888794" type="Audio">
+                    <param id="0" name="Audio file">Dragon_Ball_Z_Tema_Battle</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">5</param>
+                    <param id="1" name="Tag (optional)">&quot;battle&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -348,6 +358,22 @@
                 <action id="-9" name="Set value" sid="243647056849115" type="System">
                     <param id="0" name="Variable">pause</param>
                     <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="409068602886199">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="447659542837534" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="172189814622060" type="Audio">
+                    <param id="0" name="Tag">&quot;battle&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="262831838897778" type="Audio">
+                    <param id="0" name="Audio file">Dragon_Ball_Z_-_Tema_Intro</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;intro&quot;</param>
                 </action>
             </actions>
         </event-block>

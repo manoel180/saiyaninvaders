@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Mode</name>
+    <events>
+        <event-block sid="547728608089288">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="285068194551758" type="Touch">
+                    <param id="0" name="Object">singletxt</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="178745445341091" type="System">
+                    <param id="0" name="Layout">Single</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="585959213884130">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="942257547064075" type="Touch">
+                    <param id="0" name="Object">opcaomulti</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="364509755063076" type="System">
+                    <param id="0" name="Layout">Multiplayer</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="640011733729938">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="766291443232679" type="Touch">
+                    <param id="0" name="Object">controles</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="673216566375988" type="System">
+                    <param id="0" name="Layout">Instructions</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="559455422593138">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="132174814808818" type="Keyboard">
+                    <param id="0" name="Key">27 (Esc)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="485215365948791" type="System">
+                    <param id="0" name="Variable">pause</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="124908514587158" type="System">
+                    <param id="0" name="Layout">Single</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -12,11 +12,23 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="223950981479891" type="WinText">
-                    <param id="0" name="Text">&quot;Vegeta Venceu!!!&quot;</param>
+                <action id="-15" name="Set visible" sid="662151456604325" type="TelaVegetaWin">
+                    <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="0" name="Set text" sid="701547389749678" type="TextComentario">
-                    <param id="0" name="Text">&quot;Morra seu verme miserável!&quot;</param>
+                <action id="-15" name="Set visible" sid="774191855867521" type="FraseVegeta">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="312278852103144" type="VegetaWin">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="696702126364769" type="TelaGokuWin">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="557092046737501" type="FraseGoku">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="721773607120224" type="GokuWin">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
@@ -29,38 +41,24 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="714293249186844" type="WinText">
-                    <param id="0" name="Text">&quot;Goku venceu&quot;</param>
+                <action id="-15" name="Set visible" sid="194945616586859" type="TelaVegetaWin">
+                    <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="0" name="Set text" sid="556257855683249" type="TextComentario">
-                    <param id="0" name="Text">&quot;Você terá que treinar mais para me vencer Vegeta!&quot;</param>
+                <action id="-15" name="Set visible" sid="713484033523141" type="TelaGokuWin">
+                    <param id="0" name="Visibility">1</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="330590634077789">
-            <conditions>
-                <condition id="4" name="Is touching object" sid="162761599430451" type="Touch">
-                    <param id="0" name="Object">TextJogarNov</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="345959118190395" type="System">
-                    <param id="0" name="Layout">Multiplayer</param>
+                <action id="-15" name="Set visible" sid="523419250436794" type="FraseVegeta">
+                    <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-21" name="Reset global variables" sid="608750514675427" type="System" />
-            </actions>
-        </event-block>
-        <event-block sid="723884229293784">
-            <conditions>
-                <condition id="4" name="Is touching object" sid="448136103670714" type="Touch">
-                    <param id="0" name="Object">TextVoltarMenu</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="994364617775148" type="System">
-                    <param id="0" name="Layout">GameMode</param>
+                <action id="-15" name="Set visible" sid="634382195631408" type="VegetaWin">
+                    <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-21" name="Reset global variables" sid="720826764908679" type="System" />
+                <action id="-15" name="Set visible" sid="640272974553841" type="FraseGoku">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="129046810336543" type="GokuWin">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="792050461355957">
@@ -76,25 +74,16 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="819304718353783">
+        <event-block sid="475829788542532">
             <conditions>
-                <condition id="-14" name="Compare variable" sid="582864228668667" type="System">
-                    <param id="0" name="Variable">VidaP1</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="912113286028296" type="System">
-                    <param id="0" name="Variable">VidaP2</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
+                <condition id="4" name="Is touching object" sid="138201391960742" type="Touch">
+                    <param id="0" name="Object">VoltarResultado</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="930719159544013" type="WinText">
-                    <param id="0" name="Text">&quot;O Jogo Empatou!&quot;</param>
-                </action>
-                <action id="0" name="Set text" sid="540802612120298" type="TextComentario">
-                    <param id="0" name="Text">&quot;&quot;</param>
+                <action id="-21" name="Reset global variables" sid="442067518519903" type="System" />
+                <action id="-2" name="Go to layout" sid="741613440402703" type="System">
+                    <param id="0" name="Layout">GameMode</param>
                 </action>
             </actions>
         </event-block>

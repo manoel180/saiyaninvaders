@@ -31,5 +31,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="904022087353661">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="316989155907779" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="501012075678237" type="Audio">
+                    <param id="0" name="Audio file">Dragon_Ball_Z_-_Tema_Intro</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;intro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -156,49 +156,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Vida" sid="296946750286556">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="766672371470985" speed="0">
-                    <frame duration="1" hotspotX="-1" hotspotY="-1" original-source="E:\sprites\Esfera-1.png">
-                        <collision-poly>
-                            <point x="0.149485" y="0.149485" />
-                            <point x="0.5" y="0.00515464" />
-                            <point x="0.850515" y="0.149485" />
-                            <point x="1" y="0.5" />
-                            <point x="0.85567" y="0.85567" />
-                            <point x="0.5" y="1" />
-                            <point x="0.14433" y="0.85567" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="E:\sprites\Esfera-2.png">
-                        <collision-poly>
-                            <point x="0.149485" y="0.149485" />
-                            <point x="0.5" y="0.00515464" />
-                            <point x="0.850515" y="0.149485" />
-                            <point x="1" y="0.5" />
-                            <point x="0.85567" y="0.85567" />
-                            <point x="0.5" y="1" />
-                            <point x="0.14433" y="0.85567" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.494792" original-source="E:\sprites\Esfera-3.png">
-                        <collision-poly>
-                            <point x="0.145833" y="0.140625" />
-                            <point x="0.5" y="0" />
-                            <point x="0.854167" y="0.140625" />
-                            <point x="1" y="0.494792" />
-                            <point x="0.859375" y="0.854167" />
-                            <point x="0.5" y="1" />
-                            <point x="0.140625" y="0.854167" />
-                            <point x="0" y="0.494792" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Player2" sid="472036548766070">
             <plugin id="Sprite" />
             <behaviors>
@@ -253,38 +210,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="VidaP2" sid="706977427325147">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="751998164556686" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Documents\GitHub\saiyaninvaders\Files\prototipo vida.png">
-                        <collision-poly>
-                            <point x="0.128906" y="0.128906" />
-                            <point x="0.5" y="0.117188" />
-                            <point x="0.867188" y="0.132813" />
-                            <point x="0.898438" y="0.5" />
-                            <point x="0.75" y="0.75" />
-                            <point x="0.5" y="0.917969" />
-                            <point x="0.257813" y="0.742188" />
-                            <point x="0.0625" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Text" sid="624328601361314">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="WinText" sid="326223551281762">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="TextJogarNov" sid="907535716258081">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="TextVoltarMenu" sid="846844783029728">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="TextComentario" sid="792594274807944">
             <plugin id="Text" />
         </object-type>
         <object-type name="background" sid="533907500443272">
@@ -366,8 +292,16 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="496063261847262">
+        <object-type name="PoderVegeta" sid="496063261847262">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="784151792203112">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="545161892091775">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="540125508707145" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Documents\Pos\Sprites\RAIO-vegetta.png">
@@ -396,11 +330,20 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="190543250605381">
+        <object-type name="opcaomulti" sid="190543250605381">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410748123696150" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\sprites\TELA-modos.png" />
+                    <frame duration="1" hotspotX="0.500864" hotspotY="0.507692" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\BOTAO-multiplayer.png">
+                        <collision-poly>
+                            <point x="0.0345423" y="0.307692" />
+                            <point x="0.499136" y="0.123077" />
+                            <point x="0.962003" y="0.338462" />
+                            <point x="0.962003" y="0.661538" />
+                            <point x="0.499136" y="0.615385" />
+                            <point x="0.029361" y="0.738462" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -514,6 +457,322 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Player1Multi" sid="264075924509540">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="120330427790378">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="958133547338374">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="712848464687449" speed="5">
+                    <frame duration="1" hotspotX="0.501608" hotspotY="0.501779" original-source="C:\Users\Samuel\Documents\GitHub\saiyaninvaders\Animations\Player1\Default\000.png">
+                        <collision-poly>
+                            <point x="0.196141" y="0.217082" />
+                            <point x="0.498392" y="0.0782918" />
+                            <point x="0.659164" y="0.377224" />
+                            <point x="0.755627" y="0.498221" />
+                            <point x="0.842444" y="0.825623" />
+                            <point x="0.498392" y="1" />
+                            <point x="0.192926" y="0.786477" />
+                            <point x="0.122186" y="0.498221" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FundoTelaMulti" sid="470183415002113">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="243157472685601" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\TELA-background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TelaGokuWin" sid="142441060618206">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="696706799036846" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\Goku-Tela-Vitória.png">
+                        <collision-poly>
+                            <point x="0.000976563" y="0.00130548" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.000976563" y="0.998695" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TelaVegetaWin" sid="139952550812221">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="999323052711496" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\Vegeta-Tela-Vitória.png">
+                        <collision-poly>
+                            <point x="0.000976563" y="0.00130548" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.000976563" y="0.998695" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FraseGoku" sid="879010711965523">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="311557380373560" speed="5">
+                    <frame duration="1" hotspotX="0.500562" hotspotY="0.50365" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\FRASE-GOKU.png">
+                        <collision-poly>
+                            <point x="0.0191226" y="0.124088" />
+                            <point x="0.499438" y="0.656934" />
+                            <point x="0.980877" y="0.124088" />
+                            <point x="0.373453" y="0.49635" />
+                            <point x="0.965129" y="0.773723" />
+                            <point x="0.499438" y="0.941606" />
+                            <point x="0.0123735" y="0.919708" />
+                            <point x="0.367829" y="0.49635" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GokuWin" sid="527969201823148">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="322713534888225" speed="5">
+                    <frame duration="1" hotspotX="0.500805" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\GOKU-VENCEU.png">
+                        <collision-poly>
+                            <point x="0.0193237" y="0.162162" />
+                            <point x="0.499195" y="0.0810811" />
+                            <point x="0.987118" y="0.108108" />
+                            <point x="0.988728" y="0.905405" />
+                            <point x="0.499195" y="0.662162" />
+                            <point x="0.0161031" y="0.864865" />
+                            <point x="0.00483092" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FraseVegeta" sid="219844235621906">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="162057533949239" speed="5">
+                    <frame duration="1" hotspotX="0.50057" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\FRASE-VEGETA.png">
+                        <collision-poly>
+                            <point x="0.0148233" y="0.19697" />
+                            <point x="0.984037" y="0.212121" />
+                            <point x="0.969213" y="0.590909" />
+                            <point x="0.49943" y="0.878788" />
+                            <point x="0.031927" y="0.575758" />
+                            <point x="0.031927" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VegetaWin" sid="721850593729064">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550409958074826" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\VEGETA-VENCEU.png">
+                        <collision-poly>
+                            <point x="0.00554017" y="0.0606061" />
+                            <point x="0.99446" y="0.0606061" />
+                            <point x="0.995845" y="0.954545" />
+                            <point x="0.0193906" y="0.787879" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VidaVegeta1" sid="637811688444457">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424289858739179" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\Esfera-1.png">
+                        <collision-poly>
+                            <point x="0.149485" y="0.149485" />
+                            <point x="0.5" y="0.00515464" />
+                            <point x="0.850515" y="0.149485" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85567" y="0.85567" />
+                            <point x="0.5" y="1" />
+                            <point x="0.14433" y="0.85567" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VidaVegeta2" sid="856805078205930">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="380483666667520" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\Esfera-2.png">
+                        <collision-poly>
+                            <point x="0.154639" y="0.154639" />
+                            <point x="0.5" y="0.0154639" />
+                            <point x="0.845361" y="0.154639" />
+                            <point x="0.989691" y="0.5" />
+                            <point x="0.845361" y="0.845361" />
+                            <point x="0.5" y="0.989691" />
+                            <point x="0.154639" y="0.845361" />
+                            <point x="0.0154639" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VidaVegeta3" sid="226234638431095">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635299081205139" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\Esfera-3.png">
+                        <collision-poly>
+                            <point x="0.159794" y="0.159794" />
+                            <point x="0.5" y="0.0154639" />
+                            <point x="0.845361" y="0.154639" />
+                            <point x="0.989691" y="0.5" />
+                            <point x="0.850515" y="0.850515" />
+                            <point x="0.5" y="0.994845" />
+                            <point x="0.154639" y="0.845361" />
+                            <point x="0.0154639" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VidaGoku3" sid="282568764122902">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="125510860435039" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\Esfera-3.png">
+                        <collision-poly>
+                            <point x="0.159794" y="0.159794" />
+                            <point x="0.5" y="0.0154639" />
+                            <point x="0.845361" y="0.154639" />
+                            <point x="0.989691" y="0.5" />
+                            <point x="0.850515" y="0.850515" />
+                            <point x="0.5" y="0.994845" />
+                            <point x="0.154639" y="0.845361" />
+                            <point x="0.0154639" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VidaGoku2" sid="926379743148589">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159789702513811" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\Esfera-2.png">
+                        <collision-poly>
+                            <point x="0.154639" y="0.154639" />
+                            <point x="0.5" y="0.0154639" />
+                            <point x="0.845361" y="0.154639" />
+                            <point x="0.989691" y="0.5" />
+                            <point x="0.845361" y="0.845361" />
+                            <point x="0.5" y="0.989691" />
+                            <point x="0.154639" y="0.845361" />
+                            <point x="0.0154639" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VidaGoku1" sid="776175814692143">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671603683228223" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\Esfera-1.png">
+                        <collision-poly>
+                            <point x="0.149485" y="0.149485" />
+                            <point x="0.5" y="0.00515464" />
+                            <point x="0.850515" y="0.149485" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85567" y="0.85567" />
+                            <point x="0.5" y="1" />
+                            <point x="0.14433" y="0.85567" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="778333292136077">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="943655379819735" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\FundoMenuGame.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="558716677551806">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="748126916480138" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="InimigosP2" sid="597576854915805">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="626357002349094">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="278533338855946" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="InimigosP1" sid="688425594563604">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="541031896643340">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="737418834000546" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="3" loop="1" name="Animacao" pingpong="0" repeatcount="1" repeatto="0" sid="752755187922279" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="VoltarResultado" sid="395840032741192">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="405544550363676" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Samuel\Pictures\SaiyanInvaders\BOTAO voltar.png">
+                        <collision-poly>
+                            <point x="0.164948" y="0.164948" />
+                            <point x="0.5" y="0.0309278" />
+                            <point x="0.835052" y="0.164948" />
+                            <point x="0.989691" y="0.5" />
+                            <point x="0.85567" y="0.85567" />
+                            <point x="0.5" y="1" />
+                            <point x="0.149485" y="0.850515" />
+                            <point x="0.0154639" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -545,12 +804,12 @@
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
-                <play-in-background>No</play-in-background>
+                <play-in-background>Yes</play-in-background>
                 <positioned-audio></positioned-audio>
                 <panning-model>HRTF</panning-model>
                 <distance-model>Inverse</distance-model>
                 <listener-z-height>600</listener-z-height>
-                <reference-distance>600</reference-distance>
+                <reference-distance>400</reference-distance>
                 <maximum-distance>10000</maximum-distance>
                 <roll-off-factor>1</roll-off-factor>
             </properties>
@@ -561,6 +820,8 @@
         <file name="basicbeam_fire.ogg" />
         <file name="pain3.ogg" />
         <file name="pain2.ogg" />
+        <file name="Dragon_Ball_Z_-_Tema_Intro.ogg" />
+        <file name="Dragon_Ball_Z_Tema_Battle.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

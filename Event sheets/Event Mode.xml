@@ -18,7 +18,7 @@
         <event-block sid="585959213884130">
             <conditions>
                 <condition id="4" name="Is touching object" sid="942257547064075" type="Touch">
-                    <param id="0" name="Object">multiplayer</param>
+                    <param id="0" name="Object">opcaomulti</param>
                 </condition>
             </conditions>
             <actions>
