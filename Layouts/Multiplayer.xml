@@ -71,6 +71,7 @@
             <effect-fallback>0</effect-fallback>
             <instances>
                 <instance type="Poder" uid="87">
+
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -140,6 +141,7 @@
                     </world>
                 </instance>
                 <instance type="PoderP2" uid="75">
+
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -790,6 +792,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
+
                         <behavior-instance type="Sine">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
@@ -801,6 +804,16 @@
                                 <period-offset-random>0</period-offset-random>
                                 <magnitude>50</magnitude>
                                 <magnitude-random>0</magnitude-random>
+
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -837,6 +850,28 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Player1Multi" uid="1">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>512</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501607716</hotspotX>
+                        <hotspotY>0.501779377</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

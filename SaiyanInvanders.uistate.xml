@@ -10,7 +10,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
+<<<<<<< HEAD
         <layout active="1" order="0">Single</layout>
+=======
+        <layout active="1" order="0">Multiplayer</layout>
+        <event-sheet order="1">Event Multiplayer</event-sheet>
+        <layout active="1" order="1">Single</layout>
+        <layout order="2">GameMode</layout>
+        <layout order="3">Instructions</layout>
+        <layout order="5">GameOver</layout>
+        <event-sheet order="0">Event Single</event-sheet>
+        <event-sheet order="4">Event Instructions</event-sheet>
+        <event-sheet order="6">Event GameOver</event-sheet>
+>>>>>>> origin/develop
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -48,6 +60,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite6/" />
         <folder expanded="1" path="animation-folder/Sprite7/" />
         <folder expanded="1" path="animation-folder/Player1Multi/" />
+<<<<<<< HEAD
         <folder expanded="1" path="animation-folder/FundoTelaMulti/" />
         <folder expanded="1" path="animation-folder/TelaGokuWin/" />
         <folder expanded="1" path="animation-folder/TelaVegetaWin/" />
@@ -66,5 +79,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/InimigosP2/" />
         <folder expanded="1" path="animation-folder/InimigosP1/" />
         <folder expanded="1" path="animation-folder/VoltarResultado/" />
+=======
+        <folder expanded="1" path="animation-folder/Capsulas2/" />
+>>>>>>> origin/develop
     </folders-expanded>
 </c2uistate>

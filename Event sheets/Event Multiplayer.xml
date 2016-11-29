@@ -42,7 +42,11 @@
                             <param id="0" name="Object to create">Poder</param>
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">Player1Multi.X</param>
+
                             <param id="3" name="Y">Player1Multi.Y - 32</param>
+
+                            <param id="3" name="Y">Player2.Y - 32</param>
+
                         </action>
                         <action id="-15" name="Set visible" sid="982812839449713" type="Poder">
                             <param id="0" name="Visibility">1</param>
@@ -96,6 +100,7 @@
             </conditions>
             <actions>
                 <action id="-3" name="Create object" sid="338487503850167" type="System">
+
                     <param id="0" name="Object to create">PoderVegeta</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="X">Player2.X</param>
@@ -115,11 +120,27 @@
                 </action>
                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="888857412389075" type="PoderVegeta">
                     <param id="0" name="Angle">90</param>
+
+                    <param id="0" name="Object to create">Sprite2</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">Player1Multi.X</param>
+                    <param id="3" name="Y">Player2.Y - 32</param>
+                </action>
+                <action id="-15" name="Set visible" sid="955742045633479" type="Sprite2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="264351883379569" type="Poder">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="888857412389075" type="Poder">
+                    <param id="0" name="Angle">270</param>
+
                 </action>
             </actions>
         </event-block>
         <event-group description="" sid="460980864602746" title="ColisaoMultiplayer">
             <sub-events>
+
                 <event-block sid="332007098717359">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="688539215475557" type="Poder">
@@ -163,6 +184,9 @@
                     </actions>
                 </event-block>
                 <event-block sid="307128322632239">
+
+                <event-block sid="992732663397493">
+
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="474644107515922" type="Poder">
                             <param id="0" name="Object">InimigosP2</param>
@@ -226,6 +250,7 @@
                         <action id="-9" name="Destroy" sid="437695079307350" type="PoderVegeta" />
                     </actions>
                 </event-block>
+
                 <event-block sid="669962017769150">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="712433697696262" type="PoderVegeta">
@@ -237,6 +262,8 @@
                         <action id="-9" name="Destroy" sid="629907156997404" type="PoderVegeta" />
                     </actions>
                 </event-block>
+
+
             </sub-events>
         </event-group>
         <event-group description="" sid="604567620390447" title="FinalizacaoJogo">
@@ -284,6 +311,7 @@
                 </event-block>
             </sub-events>
         </event-group>
+
         <event-group description="" sid="833298424827787" title="LifeCount">
             <sub-events>
                 <event-block sid="432518005834382">
@@ -482,5 +510,6 @@
                 </action>
             </actions>
         </event-block>
+
     </events>
 </c2eventsheet>
